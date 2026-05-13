@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Detail | Rest Countries</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="details-page">
+    <header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary mb-0">
+            <div class="container">
+                <h3 class="mb-0">Where in the world?</h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button class="btn btn-sm btn-outline-primary theme-toggler" type="button">
+                                <i class="bi bi-brightness-high-fill"></i> Light Mode
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container pb-5">
+        <div class="mb-4">
+            <a href="index.html" class="btn bg-body-tertiary shadow-sm rounded-1 px-4">
+                <i class="bi bi-arrow-left me-2"></i>
+                Back
+            </a>
+        </div>
+
+        <section class="row gy-5 align-items-center">
+            <div class="col-12 col-lg-6">
+                <figure class="mb-0">
+                    <img src="https://flagcdn.com/af.svg" class="img-fluid rounded-2 shadow-sm w-100" alt="Afghanistan flag">
+                </figure>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <article>
+                    <h1 class="fw-bold mb-4">Country Name</h1>
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <dl class="row mb-0">
+                                <dt class="col-5 fw-semibold">Native Name:</dt>
+                                <dd class="col-7 mb-2">lorem</dd>
+
+                                <dt class="col-5 fw-semibold">Population:</dt>
+                                <dd class="col-7 mb-2">lorem</dd>
+
+                                <dt class="col-5 fw-semibold">Region:</dt>
+                                <dd class="col-7 mb-2">lorem</dd>
+
+                                <dt class="col-5 fw-semibold">Sub Region:</dt>
+                                <dd class="col-7 mb-2">lorem</dd>
+
+                                <dt class="col-5 fw-semibold">Capital:</dt>
+                                <dd class="col-7 mb-0">lorem</dd>
+                            </dl>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <dl class="row mb-0">
+                                <dt class="col-5 fw-semibold">Top Level Domain:</dt>
+                                <dd class="col-7 mb-2">lorem</dd>
+
+                                <dt class="col-5 fw-semibold">Currencies:</dt>
+                                <dd class="col-7 mb-2">lorem</dd>
+
+                                <dt class="col-5 fw-semibold">Languages:</dt>
+                                <dd class="col-7 mb-0">lorem</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 border-countries d-flex flex-column flex-md-row align-items-start align-items-md-center gap-3">
+                        <h2 class="h5 fw-semibold mb-0">Border Countries:</h2>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#" class="btn btn-sm bg-body-tertiary shadow-sm rounded-1">France</a>
+                            <a href="#" class="btn btn-sm bg-body-tertiary shadow-sm rounded-1">Germany</a>
+                            <a href="#" class="btn btn-sm bg-body-tertiary shadow-sm rounded-1">Netherlands</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="country.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

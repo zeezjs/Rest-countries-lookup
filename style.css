@@ -1,0 +1,60 @@
+:root{
+    --Dark-mode-element: hsl(209, 23%, 22%);
+}
+/* nav */
+nav{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Seamless input group borders */
+.input-group .input-group-text {
+    border-right: none;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.input-group .form-control:focus {
+    border-left: 1px solid #86b7fe; /* Match Bootstrap focus color */
+}
+
+.details-page {
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+.details-page main.container {
+    padding-top: 1.8rem;
+    padding-bottom: 3rem;
+}
+
+.details-page h1 {
+    font-size: clamp(2.1rem, 3vw, 3rem);
+}
+
+.details-page .border-countries {
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .details-page main.container {
+        padding-top: 2.5rem;
+    }
+    .details-page .border-countries {
+        align-items: center;
+    }
+}
+dl, dt{
+    line-height: 1.2;
+}
