@@ -43,3 +43,14 @@ const getCountriesByRegion = async (region) => {
     const countriesByRegionData = data;
     return countriesByRegionData;
 }
+// Fetching countries by codes (for borders)
+const getCountriesByCodes = async (codes) => {
+    const base = `https://restcountries.com/v3.1/alpha?codes=${codes.join(',')}`;
+    const response = await fetch(base);
+        if(response.status !== 200){
+            throw new Error('Problem fetching data');
+        }
+    const data = await response.json();
+    const countriesByCodesData = data;
+    return countriesByCodesData;
+}
